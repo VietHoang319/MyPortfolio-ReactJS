@@ -22,6 +22,7 @@ function Home() {
       icon: "fa-hackerrank",
     },
   ];
+
   return (
     <section className="home section" id="home">
       <div className="home-container container grid">
