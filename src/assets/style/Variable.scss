@@ -1,34 +1,36 @@
-$headerHeight: 3rem;
+:root {
+  --header-height: 3rem;
 
-$bodyFont: "Poppins", sans-serif;
-$bigFontSize: 2rem;
-$h1FontSize: 1.5rem;
-$h2FontSize: 1.25rem;
-$h3FontSize: 1.125rem;
-$normalFontSize: 0.938rem;
-$smallFontSize: 0.813rem;
-$smallerFontSize: 0.75rem;
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-$fontWeighNormal: 400;
-$fontWeighMedium: 500;
-$fontWeighSemiBold: 600;
-$fontWeighBold: 700;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
-$zFixed: 100;
-$zModal: 1000;
-$zTooltip: 10;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 
-$bodyColor: #fff;
-$firstColor: hsl(0, 69%, 61%);
-$firstColorAlt: hsl(0, 57%, 53%);
-$firstColorLighter: hsl(0, 92%, 85%);
-$textColor: #000000;
+  --body-color: #fff;
+  --first-color: hsl(0, 69%, 61%);
+  --first-color-alt: hsl(0, 57%, 53%);
+  --first-color-lighter: hsl(0, 92%, 85%);
+  --text-color: #000000;
 
-@media screen and (min-width: 986px) {
-  $bigFontSize: 3rem;
-  $h1FontSize: 2.25rem;
-  $h2FontSize: 1.5rem;
-  $h3FontSize: 1.25rem;
-  $smallFontSize: 0.875rem;
-  $smallerFontSize: 0.813rem;
+  @media screen and (min-width: 986px) {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }

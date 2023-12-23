@@ -24,17 +24,17 @@
 
       &-icon,
       .skill-arrow {
-        color: $firstColor;
+        color: var(--first-color);
         font-size: 2rem;
       }
 
       .skill-title {
-        font-size: $h3FontSize;
+        font-size: var(--h3-font-size);
       }
 
       .skill-subtitle {
-        color: $textColor;
-        font-size: $smallerFontSize;
+        color: var(--text-color);
+        font-size: var(--smaller-font-size);
       }
     }
 
@@ -48,23 +48,23 @@
         .skill-name {
           align-items: center;
           display: flex;
-          font-size: $normalFontSize;
-          font-weight: $fontWeighMedium;
+          font-size: var(--normal-font-size);
+          font-weight: var(--font-medium);
 
           .skill-icon {
             font-size: 1.125rem;
-            color: $firstColor;
+            color: var(--first-color);
             margin-right: 0.5rem;
           }
         }
       }
 
       .skill-bar {
-        background-color: $firstColorLighter;
+        background-color: var(--first-color-lighter);
 
         .skill-percentage {
           display: block;
-          background-color: $firstColor;
+          background-color: var(--first-color);
         }
       }
 

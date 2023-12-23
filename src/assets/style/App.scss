@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  background-color: $bodyColor;
-  color: $textColor;
-  font-family: $bodyFont;
-  font-size: $normalFontSize;
-  margin: 0 0 $headerHeight 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  margin: 0 0 var(--header-height) 0;
 }
 
 h1,
@@ -17,8 +17,8 @@ h2,
 h3,
 h4,
 h5 {
-  color: $textColor;
-  font-weight: $fontWeighSemiBold;
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
   margin: 0;
 }
 
@@ -39,13 +39,13 @@ img {
   padding: 2rem 0 4rem;
 
   &-title {
-    color: $textColor;
-    font-size: $h1FontSize;
+    color: var(--text-color);
+    font-size: var(--big-font-size);
   }
 
   &-subtitle {
     display: block;
-    font-size: $smallFontSize;
+    font-size: var(--small-font-size);
     margin-bottom: 1.5rem;
   }
 
@@ -68,11 +68,11 @@ img {
 
 /* Button */
 .button {
-  background-color: $firstColor;
+  background-color: var(--first-color);
   border-radius: 0.5rem;
   color: #fff;
   display: inline-block;
-  font-weight: $fontWeighMedium;
+  font-weight: var(--font-medium);
   padding: 1rem;
 
   &-icon {
@@ -82,7 +82,7 @@ img {
   }
 
   &:hover {
-    background-color: $firstColorAlt;
+    background-color: var(--first-color-alt);
   }
 }
 
@@ -94,7 +94,7 @@ img {
 .scroll-up {
   background-color: white;
   bottom: 4rem;
-  border: 2px solid $firstColor;
+  border: 2px solid var(--first-color);
   border-radius: 0.4rem;
   display: none;
   opacity: 0.8;
@@ -102,10 +102,10 @@ img {
   position: fixed;
   transition: 0.4s;
   right: 1rem;
-  z-index: $zTooltip;
+  z-index: var(--z-tooltip);
 
   &-icon {
-    color: $firstColor;
+    color: var(--first-color);
     font-size: 1.5rem;
   }
 

@@ -20,14 +20,14 @@
       margin-bottom: 2.5rem;
 
       &-title {
-        color: $textColor;
-        font-size: $h2FontSize;
-        font-weight: $fontWeighSemiBold;
+        color: var(--text-color);
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
         text-align: center;
       }
 
       &-name {
-        font-size: $smallerFontSize;
+        font-size: var(--smaller-font-size);
         text-align: center;
       }
     }

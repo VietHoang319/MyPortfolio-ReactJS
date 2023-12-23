@@ -8,20 +8,20 @@
     margin-bottom: 2rem;
 
     .contact-icon {
-      color: $firstColor;
+      color: var(--first-color);
       font-size: 2rem;
       margin-right: 0.75rem;
     }
 
     .contact-title {
-      font-size: $h3FontSize;
-      font-weight: $fontWeighMedium;
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-medium);
       margin: 0;
     }
 
     .contact-subtitle {
-      font-size: $smallerFontSize;
-      color: $textColor;
+      font-size: var(--smaller-font-size);
+      color: var(--text-color);
     }
   }
 }

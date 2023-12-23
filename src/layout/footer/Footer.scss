@@ -4,20 +4,20 @@
   padding-top: 2rem;
 
   &-bg {
-    background-color: $firstColor;
+    background-color: var(--first-color);
     padding: 2rem 0 3rem;
 
     .footer-container {
       row-gap: 3.5rem;
 
       .footer-title {
-        font-size: $h1FontSize;
+        font-size: var(--big-font-size);
         margin-bottom: 0.25rem;
         margin-top: 0;
       }
 
       .footer-subtitle {
-        font-size: $smallFontSize;
+        font-size: var(--small-font-size);
       }
 
       .footer-links {
@@ -27,7 +27,7 @@
         row-gap: 1.5rem;
 
         .footer-link:hover {
-          color: $firstColorLighter;
+          color: var(--first-color-lighter);
         }
       }
 
@@ -36,7 +36,7 @@
         margin-right: 1.5rem;
 
         &:hover {
-          color: $firstColorLighter;
+          color: var(--first-color-lighter);
         }
       }
 
