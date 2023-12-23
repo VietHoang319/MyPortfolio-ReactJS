@@ -71,7 +71,7 @@ function Home() {
 
           <div className="home-data">
             <h1 className="home-title">Ngô Việt Hoàng</h1>
-            <h3 className="home-subtittle">Fresher Full Stack Developer</h3>
+            <h3 className="home-subtitle">Fresher Full Stack Developer</h3>
             <p className="home-description">home description</p>
             <a href="#contact" className="button button-flex">
               Liên hệ tôi <i className="uil uil-message button-icon"></i>

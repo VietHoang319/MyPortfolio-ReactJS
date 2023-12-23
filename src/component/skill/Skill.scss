@@ -1,7 +1,9 @@
-@import "../../assets/style/App.scss";
-
 .skill-container {
   row-gap: 0;
+
+  @media screen and (min-width: 568px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .skill-content {
     margin-bottom: 0.75rem;
@@ -30,6 +32,10 @@
 
       .skill-title {
         font-size: var(--h3-font-size);
+
+        @media screen and (max-width: 350px) {
+          font-size: var(--normal-font-size);
+        }
       }
 
       .skill-subtitle {

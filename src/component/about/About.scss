@@ -1,23 +1,37 @@
-@import "../../assets/style/App.scss";
-
 .about-container {
+  @media screen and (min-width: 768px) {
+    column-gap: 5rem;
+  }
+
   .about-img {
     align-self: center;
     border-radius: 0.5rem;
     justify-self: center;
     width: 200px;
+
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
   }
 
   .about-data {
     .about-description {
       text-align: center;
       margin-bottom: 2.5rem;
+
+      @media screen and (min-width: 768px) {
+        text-align: initial;
+      }
     }
 
     .about-info {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 2.5rem;
+
+      @media screen and (min-width: 768px) {
+        justify-content: space-between;
+      }
 
       &-title {
         color: var(--text-color);
@@ -35,6 +49,21 @@
     .about-buttons {
       display: flex;
       justify-content: center;
+
+      @media screen and (min-width: 768px) {
+        justify-content: initial;
+      }
+
+      .button-download-cv {
+        @media screen and (min-width: 768px) {
+          width: 100%;
+          justify-content: center;
+        }
+      }
     }
+  }
+
+  @media screen and (min-width: 568px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Footer from "./layout/footer/Footer";
 import Header from "./layout/header/Header";
 import Main from "./layout/main/Main";
+import "./assets/style/Variable.scss";
 import "./assets/style/App.scss";
 
 function App() {

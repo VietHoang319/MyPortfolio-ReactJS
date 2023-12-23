@@ -55,7 +55,7 @@ function About() {
             <a
               download="CV_Ngo Viet Hoang_Java Developer.pdf"
               href={MyCV}
-              className="button button-flex"
+              className="button button-flex button-download-cv"
             >
               Download CV <i className="uil uil-download-alt button-icon"></i>
             </a>
