@@ -31,6 +31,17 @@
       align-items: center;
       display: flex;
 
+      .change-theme {
+        color: $textColor;
+        cursor: pointer;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+
+        &:hover {
+          color: $firstColor;
+        }
+      }
+
       .nav-toggle {
         font-size: 1.1rem;
         cursor: pointer;
@@ -55,8 +66,12 @@
           font-size: 1.2rem;
         }
       }
+
+      .active-link {
+        color: $firstColor;
+      }
     }
-  
+
     &-close {
       position: absolute;
       bottom: 0.5rem;
@@ -89,4 +104,8 @@
       }
     }
   }
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }

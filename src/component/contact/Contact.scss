@@ -1,0 +1,27 @@
+@import "../../assets/style/Variable.scss";
+
+.contact-container {
+  row-gap: 3rem;
+
+  .contact-information {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .contact-icon {
+      color: $firstColor;
+      font-size: 2rem;
+      margin-right: 0.75rem;
+    }
+
+    .contact-title {
+      font-size: $h3FontSize;
+      font-weight: $fontWeighMedium;
+      margin: 0;
+    }
+
+    .contact-subtitle {
+      font-size: $smallerFontSize;
+      color: $textColor;
+    }
+  }
+}
