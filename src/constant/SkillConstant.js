@@ -16,7 +16,7 @@ const skillConstant = {
       id: 3,
       name: "Database",
       description: 'Hơn 1 năm kinh nghiệm',
-      icon: "fa-solid fa-server"
+      icon: "fa-solid fa-database"
     }
   ],
 

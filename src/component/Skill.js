@@ -16,7 +16,7 @@ function Skill() {
   };
 
   return (
-    <section className="skill session" id="skill">
+    <section className="skill section" id="skill">
       <h2 className="section-title">Kỹ năng</h2>
       <span className="section-subtitle">Trình độ kỹ thuật của tôi</span>
 

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-function Header() {
-  const homeLink = "#";
-  const [openNav, setOpenNav] = useState(false);
+function Header(props) {
   const listNavItem = [
     {
       id: 1,
@@ -35,11 +33,26 @@ function Header() {
       link: "contact",
     },
   ];
+  const [openNav, setOpenNav] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("isDarkMode") === "true"
+      ? localStorage.getItem("isDarkMode")
+      : false
+  );
+
+  useEffect(() => {
+    document.body.classList[isDarkMode ? 'add' : 'remove']('dark-theme');
+  }, [isDarkMode]);
+
+  const handleChangleThemeMode = () => {
+    setIsDarkMode(!isDarkMode);
+    localStorage.setItem("isDarkMode", !isDarkMode);
+  }
 
   return (
-    <header className="header">
+    <header className={`header ${props.scrollHeader ? "scroll-header" : ""}`}>
       <nav className="nav container">
-        <a href={homeLink} className="nav-logo">
+        <a href={props.homeLink} className="nav-logo">
           Ngô Việt Hoàng
         </a>
 
@@ -48,7 +61,12 @@ function Header() {
             {listNavItem.map((item) => {
               return (
                 <li className="nav-item" key={item.id}>
-                  <a href={`#${item.link}`} className="nav-link active-link">
+                  <a
+                    href={`#${item.link}`}
+                    className={`nav-link ${
+                      props.navLinkActive === item.link ? "active-link" : ""
+                    }`}
+                  >
                     <i className={`uil nav-icon ${item.icon}`}></i> {item.name}
                   </a>
                 </li>
@@ -64,7 +82,12 @@ function Header() {
         </div>
 
         <div className="nav-btns">
-          <i className="uil uil-moon change-theme" id="themeButton"></i>
+          <i
+            className={`uil change-theme ${
+              isDarkMode ? "uil-sun" : "uil-moon"
+            }`}
+            onClick={() => handleChangleThemeMode()}
+          />
 
           <div
             className="nav-toggle"
