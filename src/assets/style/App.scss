@@ -1,0 +1,67 @@
+@import "./Variable.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bodyColor;
+  color: $textColor;
+  font-family: $bodyFont;
+  font-size: $normalFontSize;
+  margin: 0 0 $headerHeight 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $textColor;
+  font-weight: $fontWeighSemiBold;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.section {
+  padding: 2rem 0 4rem;
+
+  &-title {
+    color: $textColor;
+    font-size: $h1FontSize;
+  }
+
+  &-subtitle {
+    display: block;
+    font-size: $smallFontSize;
+    margin-bottom: 1.5rem;
+  }
+
+  &-title,
+  &-subtitle {
+    text-align: center;
+  }
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 768px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}

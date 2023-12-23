@@ -1,0 +1,92 @@
+@import "../../assets/style/Variable.scss";
+
+.header {
+  background-color: $bodyColor;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: $zFixed;
+
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: $headerHeight;
+    max-width: 968px;
+
+    &-logo,
+    &-toggle {
+      color: $textColor;
+      font-weight: $fontWeighMedium;
+    }
+
+    &-logo:hover,
+    &-toggle:hover,
+    &-link:hover {
+      color: $firstColor;
+    }
+
+    &-btns {
+      align-items: center;
+      display: flex;
+
+      .nav-toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+
+    &-list {
+      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+
+      .nav-link {
+        align-items: center;
+        color: $textColor;
+        display: flex;
+        flex-direction: column;
+        font-size: $smallFontSize;
+        font-weight: $fontWeighMedium;
+
+        .nav-icon {
+          margin-bottom: 0.25rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    &-close {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 1.3rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--first-color);
+
+      &:hover {
+        color: var(--first-color-alt);
+      }
+    }
+
+    .show-menu {
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      &-menu {
+        background-color: $bodyColor;
+        bottom: -100%;
+        border-radius: 2rem 2rem 0 0;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        left: 0;
+        max-width: -webkit-fill-available;
+        padding: 2rem 1.5rem 2rem;
+        position: fixed;
+        transition: 1s;
+        width: 100%;
+      }
+    }
+  }
+}
