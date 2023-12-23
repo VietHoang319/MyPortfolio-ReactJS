@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import skillConstant from "../../constant/SkillConstant";
+import "./Skill.scss";
 
 function Skill() {
   const [listSkillHeaderOpen, setListSkillHeaderOpen] = useState([]);
@@ -32,13 +33,15 @@ function Skill() {
                 className={`skill-content ${
                   isOpen ? "skill-open" : "skill-close"
                 }`}
-                onClick={() => {
-                  if (listSkill.length > 0) {
-                    clickSkillHeader(skillHeader.id, isOpen);
-                  }
-                }}
               >
-                <div className="skill-header">
+                <div
+                  className="skill-header"
+                  onClick={() => {
+                    if (listSkill.length > 0) {
+                      clickSkillHeader(skillHeader.id, isOpen);
+                    }
+                  }}
+                >
                   <i className={`skill-header-icon ${skillHeader.icon}`}></i>
 
                   <div>

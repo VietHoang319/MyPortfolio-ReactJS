@@ -1,0 +1,96 @@
+@import "../../assets/style/App.scss";
+
+.skill-container {
+  row-gap: 0;
+
+  .skill-content {
+    margin-bottom: 0.75rem;
+
+    .skill-header {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      margin-bottom: 0.25;
+
+      &-icon {
+        margin-right: 0.75rem;
+        width: 2.5rem;
+      }
+
+      .skill-arrow {
+        margin-left: auto;
+        transition: 0.4s;
+      }
+
+      &-icon,
+      .skill-arrow {
+        color: $firstColor;
+        font-size: 2rem;
+      }
+
+      .skill-title {
+        font-size: $h3FontSize;
+      }
+
+      .skill-subtitle {
+        color: $textColor;
+        font-size: $smallerFontSize;
+      }
+    }
+
+    .skill-list {
+      .skill-titles {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+
+        .skill-name {
+          align-items: center;
+          display: flex;
+          font-size: $normalFontSize;
+          font-weight: $fontWeighMedium;
+
+          .skill-icon {
+            font-size: 1.125rem;
+            color: $firstColor;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .skill-bar {
+        background-color: $firstColorLighter;
+
+        .skill-percentage {
+          display: block;
+          background-color: $firstColor;
+        }
+      }
+
+      .skill-bar,
+      .skill-percentage {
+        border-radius: 0.25rem;
+        height: 5px;
+      }
+    }
+  }
+
+  .skill-close .skill-list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .skill-open {
+    .skill-list {
+      height: max-content;
+      margin-bottom: 0.25rem;
+      margin-left: 3rem;
+      margin-top: 1rem;
+    }
+
+    .skill-arrow {
+      transform: rotate(-180deg);
+    }
+  }
+}
