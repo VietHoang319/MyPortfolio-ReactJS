@@ -1,0 +1,40 @@
+@import "../../assets/style/App.scss";
+
+.about-container {
+  .about-img {
+    align-self: center;
+    border-radius: 0.5rem;
+    justify-self: center;
+    width: 200px;
+  }
+
+  .about-data {
+    .about-description {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .about-info {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 2.5rem;
+
+      &-title {
+        color: $textColor;
+        font-size: $h2FontSize;
+        font-weight: $fontWeighSemiBold;
+        text-align: center;
+      }
+
+      &-name {
+        font-size: $smallerFontSize;
+        text-align: center;
+      }
+    }
+
+    .about-buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

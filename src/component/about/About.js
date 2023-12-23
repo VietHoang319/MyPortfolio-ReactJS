@@ -2,11 +2,12 @@ import React from "react";
 import MyCV from "../../assets/file/CV_Ngo_Viet_Hoang_Java_Developer.pdf";
 import AboutImage from "../../assets/image/about.jpg";
 import moment from "moment";
+import "./About.scss";
 
 function About() {
-  const diff = moment().diff(moment('2022-09-12'), 'milliseconds');
+  const diff = moment().diff(moment("2022-09-12"), "milliseconds");
   const duration = moment.duration(diff);
-  const yearExperience = duration.years().toString().padStart(2, '0');
+  const yearExperience = duration.years().toString().padStart(2, "0");
 
   return (
     <section className="about section" id="about">
@@ -26,27 +27,27 @@ function About() {
 
           <div className="about-info">
             <div>
-              <span className="about-info-title">{yearExperience}+</span>
-              <span className="about-info-name">
+              <div className="about-info-title">{yearExperience}+</div>
+              <div className="about-info-name">
                 Năm <br />
                 kinh nghiệm
-              </span>
+              </div>
             </div>
 
             <div>
-              <span className="about-info-title">01+</span>
-              <span className="about-info-name">
+              <div className="about-info-title">01+</div>
+              <div className="about-info-name">
                 Dự án <br />
                 hoàn thành
-              </span>
+              </div>
             </div>
 
             <div>
-              <span className="about-info-title">01</span>
-              <span className="about-info-name">
+              <div className="about-info-title">01</div>
+              <div className="about-info-name">
                 Công ty <br />
                 đã làm việc
-              </span>
+              </div>
             </div>
           </div>
 
