@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import skillConstant from "../constant/SkillConstant";
+import skillConstant from "../../constant/SkillConstant";
 
 function Skill() {
   const [listSkillHeaderOpen, setListSkillHeaderOpen] = useState([]);

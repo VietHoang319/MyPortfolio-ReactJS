@@ -1,6 +1,6 @@
 import React from "react";
-import MyCV from "../assets/file/CV_Ngo_Viet_Hoang_Java_Developer.pdf";
-import AboutImage from "../assets/image/about.jpg";
+import MyCV from "../../assets/file/CV_Ngo_Viet_Hoang_Java_Developer.pdf";
+import AboutImage from "../../assets/image/about.jpg";
 import moment from "moment";
 
 function About() {
