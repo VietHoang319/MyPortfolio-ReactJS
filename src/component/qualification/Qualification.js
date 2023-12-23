@@ -1,4 +1,5 @@
 import React from "react";
+import "./Qualification.scss";
 
 function Qualification() {
   return (
@@ -9,14 +10,16 @@ function Qualification() {
       <div className="qualification-container container">
         <div className="qualification-section">
           <div
-            className="qualification-content qualification-active"
+            className="qualification-content"
             data-content
             id="education"
           >
             <div className="qualification-data">
               <div>
                 <h3 className="qualification-title">Computer Enginer</h3>
-                <span className="qualification-subtitle">Thuyloi University</span>
+                <span className="qualification-subtitle">
+                  Thuyloi University
+                </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt"></i>
                   2014 -2017
@@ -39,7 +42,9 @@ function Qualification() {
 
               <div>
                 <h3 className="qualification-title">Computer Enginer</h3>
-                <span className="qualification-subtitle">Thuyloi University</span>
+                <span className="qualification-subtitle">
+                  Thuyloi University
+                </span>
                 <div className="qualification-calendar">
                   <i className="uil uil-calendar-alt"></i>
                   2014 -2017
