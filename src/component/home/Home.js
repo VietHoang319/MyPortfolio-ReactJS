@@ -1,5 +1,6 @@
 import React from "react";
-import Avatar from "../../assets/image/avatar.png"
+import Avatar from "../../assets/image/avatar.png";
+import "./Home.scss";
 
 function Home() {
   const listLink = [
@@ -40,6 +41,7 @@ function Home() {
               </a>
             ))}
           </div>
+
           <div className="home-img">
             <svg
               viewBox="0 0 200 187"
@@ -62,15 +64,11 @@ function Home() {
                   129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                   -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                 />
-                <image
-                  className="home-blob-img"
-                  href={Avatar}
-                  x="22"
-                  y="-5"
-                />
+                <image className="home-blob-img" href={Avatar} x="22" y="-5" />
               </g>
             </svg>
           </div>
+
           <div className="home-data">
             <h1 className="home-title">Ngô Việt Hoàng</h1>
             <h3 className="home-subtittle">Fresher Full Stack Developer</h3>
@@ -80,6 +78,7 @@ function Home() {
             </a>
           </div>
         </div>
+
         <div className="home-scroll">
           <a href="#about" className="home-scroll-button button-flex">
             <i className="uil uil-mouse-alt home-scroll-mouse"></i>

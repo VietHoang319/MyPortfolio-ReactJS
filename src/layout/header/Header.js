@@ -42,13 +42,13 @@ function Header(props) {
   );
 
   useEffect(() => {
-    document.body.classList[isDarkMode ? 'add' : 'remove']('dark-theme');
+    document.body.classList[isDarkMode ? "add" : "remove"]("dark-theme");
   }, [isDarkMode]);
 
   const handleChangleThemeMode = () => {
     setIsDarkMode(!isDarkMode);
     localStorage.setItem("isDarkMode", !isDarkMode);
-  }
+  };
 
   return (
     <header className={`header ${props.scrollHeader ? "scroll-header" : ""}`}>
@@ -74,6 +74,7 @@ function Header(props) {
               );
             })}
           </ul>
+
           <i
             className="uil uil-times nav-close"
             onClick={() => {

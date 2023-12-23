@@ -65,3 +65,28 @@ img {
   display: grid;
   gap: 1.5rem;
 }
+
+/* Button */
+.button {
+  background-color: $firstColor;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: $fontWeighMedium;
+  padding: 1rem;
+
+  &-icon {
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    background-color: $firstColorAlt;
+  }
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
